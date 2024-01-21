@@ -1,0 +1,165 @@
+body {
+    background-color: white;
+}
+
+
+/* .game-section {
+    width: 70%;
+    margin: auto;
+} */
+
+.game-board {
+    height: 580px;
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 200px;
+    color: black;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    float: left;
+}
+
+.game-title {
+    /* height: 70px; */
+    /* width: 100%; */
+    padding-top: 5px;
+    text-align: center;
+    background-color: #29AF66;
+    padding-bottom: 10px;
+}
+
+.game-title h1,
+h3 {
+    margin-top: 5px;
+}
+
+.scoreboard {
+    height: 82px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.self-score {
+    height: 80px;
+    width: 120px;
+    text-align: center;
+    background-color: #22425e;
+    float: left;
+    border-top: 2px solid white;
+    color: white;
+}
+
+.self-score h1,
+h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.opinion-score {
+    height: 80px;
+    min-width: 120px;
+    max-width: 50%;
+    text-align: center;
+    background-color: #22425e;
+    float: right;
+    border-top: 2px solid white;
+    color: white;
+}
+
+.opinion-score h1,
+h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.options {
+    width: 360px;
+    margin: auto;
+}
+
+.option-box {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: #29AF66;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    float: left;
+}
+
+.option-box:hover {
+    background-color: white;
+}
+
+#win {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.play-box {
+    width: 100%;
+    height: 200px;
+}
+
+.self-box {
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin-left: 30px;
+}
+
+.self-box h4 {
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+
+.self-box img {
+    height: 100px;
+    margin-left: 20px;
+}
+
+.opinion-box {
+    width: 40%;
+    height: 200px;
+    float: right;
+    margin-right: 30px;
+}
+
+.opinion-box h4 {
+    float: right;
+    text-align: center;
+}
+
+.opinion-box img {
+    height: 100px;
+    float: right;
+}
+
+.leaderboard {
+    height: 580px;
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    float: left;
+    margin-left: 50px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
