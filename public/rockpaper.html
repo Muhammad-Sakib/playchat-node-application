@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/rockpaper.css">
+</head>
+
+<body>
+    <div class="game-section">
+        <div class="game-board">
+            <div class="game-title">
+                <h1>Rock Paper Scissors</h1>
+                <h3 id="changes">chances</h3>
+            </div>
+            <div class="scoreboard">
+                <div class="self-score">
+                    <h1>0</h1>
+                    <h3>You</h3>
+                </div>
+                <div class="opinion-score">
+                    <h1>0</h1>
+                    <h3 id="another-user">Joining</h3>
+                </div>
+            </div>
+            <div class="options">
+                <div class="option-box" onclick="checkMove('Rock')">
+                    <h3>Rock</h3>
+                </div>
+                <div class="option-box" onclick="checkMove('Paper')">
+                    <h3>Paper</h3>
+                </div>
+                <div class="option-box" onclick="checkMove('Scissors')">
+                    <h3>Scissors</h3>
+                </div>
+            </div>
+            <div class="play-box">
+                <div class="self-box" id="box1">
+                    <h4 id="self-move">Your Move</h4>
+                    <!-- <img src="assets/paper.png"> -->
+                </div>
+                <div class="opinion-box" id="box2">
+                    <h4 id="opinion-move">Opinions Move</h4>
+                    <!-- <img src="assets/paper.png"> -->
+                </div>
+            </div>
+            <h2 id="win">Winner!</h2>
+        </div>
+        <div class="leaderboard">
+            <div class="game-title">
+                <h2>Leaderboard</h2>
+
+            </div>
+            <table id="score-table">
+                <tr>
+                    <th>Your Choice</th>
+                    <th id="player-two">username Choice</th>
+                    <th>Win</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="rockPaper.js"></script>
+</body>
+
+</html>
